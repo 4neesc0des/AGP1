@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:4200/ -->
+<html lang="en"><script id="allow-copy_script">(function agent() {
+    let unlock = false
+    document.addEventListener('allow_copy', (event) => {
+      unlock = event.detail.unlock
+    })
+
+    const copyEvents = [
+      'copy',
+      'cut',
+      'contextmenu',
+      'selectstart',
+      'mousedown',
+      'mouseup',
+      'mousemove',
+      'keydown',
+      'keypress',
+      'keyup',
+    ]
+    const rejectOtherHandlers = (e) => {
+      if (unlock) {
+        e.stopPropagation()
+        if (e.stopImmediatePropagation) e.stopImmediatePropagation()
+      }
+    }
+    copyEvents.forEach((evt) => {
+      document.documentElement.addEventListener(evt, rejectOtherHandlers, {
+        capture: true,
+      })
+    })
+  })()</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Portfolio</title>
+  <!--<base href="/">--><base href=".">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="http://localhost:4200/favicon.ico">
+<link rel="stylesheet" href="./Portfolio_files/styles.css"><style>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAuY29tcG9uZW50LmNzcyJ9 */</style><style>header[_ngcontent-mfl-c17] {
+  padding: 30px 0;
+}
+
+.humburger[_ngcontent-mfl-c17]   span[_ngcontent-mfl-c17] {
+  width: 21px;
+  height: 3px;
+  background: #000;
+  display: block;
+  margin-bottom: 4px;
+  border-radius: 10px;
+}
+
+.humburger[_ngcontent-mfl-c17]   span[_ngcontent-mfl-c17]:nth-child(2) {
+  width: 10px;
+}
+
+.humburger[_ngcontent-mfl-c17]   span[_ngcontent-mfl-c17]:last-child {
+  margin-bottom: 0;
+}
+
+header[_ngcontent-mfl-c17]   ul[_ngcontent-mfl-c17] {
+  display: flex;
+  align-items: center;
+}
+
+header[_ngcontent-mfl-c17]   ul[_ngcontent-mfl-c17]   li[_ngcontent-mfl-c17] {
+  padding: 0 40px;
+}
+
+header[_ngcontent-mfl-c17]   ul[_ngcontent-mfl-c17]   li[_ngcontent-mfl-c17]:first-child {
+  padding-left: 0;
+}
+
+header[_ngcontent-mfl-c17]   ul[_ngcontent-mfl-c17]   li[_ngcontent-mfl-c17]:last-child {
+  padding-right: 0;
+}
+
+header[_ngcontent-mfl-c17]   ul[_ngcontent-mfl-c17]   li[_ngcontent-mfl-c17]   a[_ngcontent-mfl-c17] {
+  color: black;
+  font-weight: 600;
+  font-family: sans-serif;
+  position: relative;
+}
+
+header[_ngcontent-mfl-c17]   ul[_ngcontent-mfl-c17]   li[_ngcontent-mfl-c17]   a[_ngcontent-mfl-c17]:hover:after, header[_ngcontent-mfl-c17]   ul[_ngcontent-mfl-c17]   li[_ngcontent-mfl-c17]   a.is-active[_ngcontent-mfl-c17]::after {
+  content: "";
+  background-color: #f9b205;
+  height: 9px;
+  position: absolute;
+  left: -1px;
+  z-index: -1;
+  bottom: 0;
+  right: -3px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhlYWRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxXQUFXO0VBQ1gsZ0JBQWdCO0VBQ2hCLGNBQWM7RUFDZCxrQkFBa0I7RUFDbEIsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsV0FBVztBQUNiOztBQUVBO0VBQ0UsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLG1CQUFtQjtBQUNyQjs7QUFDQTtFQUNFLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUNBO0VBQ0UsZ0JBQWdCO0FBQ2xCOztBQUNBO0VBQ0UsWUFBWTtFQUNaLGdCQUFnQjtFQUNoQix1QkFBdUI7RUFDdkIsa0JBQWtCO0FBQ3BCOztBQUVBOztFQUVFLFdBQVc7RUFDWCx5QkFBeUI7RUFDekIsV0FBVztFQUNYLGtCQUFrQjtFQUNsQixVQUFVO0VBQ1YsV0FBVztFQUNYLFNBQVM7RUFDVCxXQUFXO0FBQ2IiLCJmaWxlIjoiaGVhZGVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJoZWFkZXIge1xyXG4gIHBhZGRpbmc6IDMwcHggMDtcclxufVxyXG5cclxuLmh1bWJ1cmdlciBzcGFuIHtcclxuICB3aWR0aDogMjFweDtcclxuICBoZWlnaHQ6IDNweDtcclxuICBiYWNrZ3JvdW5kOiAjMDAwO1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG4gIG1hcmdpbi1ib3R0b206IDRweDtcclxuICBib3JkZXItcmFkaXVzOiAxMHB4O1xyXG59XHJcblxyXG4uaHVtYnVyZ2VyIHNwYW46bnRoLWNoaWxkKDIpIHtcclxuICB3aWR0aDogMTBweDtcclxufVxyXG5cclxuLmh1bWJ1cmdlciBzcGFuOmxhc3QtY2hpbGQge1xyXG4gIG1hcmdpbi1ib3R0b206IDA7XHJcbn1cclxuXHJcbmhlYWRlciB1bCB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG59XHJcbmhlYWRlciB1bCBsaSB7XHJcbiAgcGFkZGluZzogMCA0MHB4O1xyXG59XHJcblxyXG5oZWFkZXIgdWwgbGk6Zmlyc3QtY2hpbGQge1xyXG4gIHBhZGRpbmctbGVmdDogMDtcclxufVxyXG5oZWFkZXIgdWwgbGk6bGFzdC1jaGlsZCB7XHJcbiAgcGFkZGluZy1yaWdodDogMDtcclxufVxyXG5oZWFkZXIgdWwgbGkgYSB7XHJcbiAgY29sb3I6IGJsYWNrO1xyXG4gIGZvbnQtd2VpZ2h0OiA2MDA7XHJcbiAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7XHJcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG59XHJcblxyXG5oZWFkZXIgdWwgbGkgYTpob3ZlcjphZnRlcixcclxuaGVhZGVyIHVsIGxpIGEuaXMtYWN0aXZlOjphZnRlciB7XHJcbiAgY29udGVudDogXCJcIjtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjliMjA1O1xyXG4gIGhlaWdodDogOXB4O1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICBsZWZ0OiAtMXB4O1xyXG4gIHotaW5kZXg6IC0xO1xyXG4gIGJvdHRvbTogMDtcclxuICByaWdodDogLTNweDtcclxufVxyXG4iXX0= */</style><style>.p-profile[_ngcontent-mfl-c16] {
+  background: url('pic.jpg');
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.row[_ngcontent-mfl-c16] {
+  display: flex;
+}
+
+.row[_ngcontent-mfl-c16]   .item[_ngcontent-mfl-c16] {
+  width: 40%;
+}
+
+.p-tag[_ngcontent-mfl-c16] {
+  background: #989898;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhvbWUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLDBCQUE4QztFQUM5QyxhQUFhO0VBQ2IsV0FBVztFQUNYLDJCQUEyQjtFQUMzQixzQkFBc0I7RUFDdEIsNEJBQTRCO0FBQzlCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsVUFBVTtBQUNaOztBQUVBO0VBQ0UsbUJBQW1CO0VBQ25CLFdBQVc7RUFDWCxpQkFBaUI7RUFDakIsZUFBZTtFQUNmLG1CQUFtQjtBQUNyQiIsImZpbGUiOiJob21lLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucC1wcm9maWxlIHtcclxuICBiYWNrZ3JvdW5kOiB1cmwoXCIuLi8uLi8uLi9hc3NldHMvaW1nL3BpYy5qcGdcIik7XHJcbiAgaGVpZ2h0OiA1MDBweDtcclxuICB3aWR0aDogMTAwJTtcclxuICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XHJcbiAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcclxuICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG59XHJcblxyXG4ucm93IHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG59XHJcblxyXG4ucm93IC5pdGVtIHtcclxuICB3aWR0aDogNDAlO1xyXG59XHJcblxyXG4ucC10YWcge1xyXG4gIGJhY2tncm91bmQ6ICM5ODk4OTg7XHJcbiAgY29sb3I6ICNmZmY7XHJcbiAgcGFkZGluZzogNXB4IDEwcHg7XHJcbiAgZm9udC1zaXplOiAxNHB4O1xyXG4gIG1hcmdpbi1ib3R0b206IDFyZW07XHJcbn1cclxuIl19 */</style></head>
+<body cz-shortcut-listen="true">
+  <app-root _nghost-mfl-c18="" ng-version="12.2.3"><section _ngcontent-mfl-c18="" class="wrapper"><div _ngcontent-mfl-c18="" class="main-container"><app-header _ngcontent-mfl-c18="" _nghost-mfl-c17=""><header _ngcontent-mfl-c17=""><div _ngcontent-mfl-c17="" class="container"><div _ngcontent-mfl-c17="" class="row"><div _ngcontent-mfl-c17="" class="col-item p-flex p-flex-algn-center p-flex-jc-sb"><ul _ngcontent-mfl-c17=""><li _ngcontent-mfl-c17="" class="humburger p-cursor"><span _ngcontent-mfl-c17=""></span><span _ngcontent-mfl-c17=""></span><span _ngcontent-mfl-c17=""></span></li><li _ngcontent-mfl-c17=""><img _ngcontent-mfl-c17="" src="./Portfolio_files/search.png" alt="" class="p-cursor"></li></ul><ul _ngcontent-mfl-c17=""><li _ngcontent-mfl-c17=""><a _ngcontent-mfl-c17="" routerlink="" routerlinkactive="is-active" ng-reflect-router-link="" ng-reflect-router-link-active="is-active" href="http://localhost:4200/" class="is-active"> Home </a></li><li _ngcontent-mfl-c17=""><a _ngcontent-mfl-c17="" href="http://localhost:4200/"> About </a></li><li _ngcontent-mfl-c17=""><a _ngcontent-mfl-c17="" href="http://localhost:4200/"> Portfolio </a></li><li _ngcontent-mfl-c17=""><a _ngcontent-mfl-c17="" href="http://localhost:4200/"> Reach </a></li></ul></div></div></div></header></app-header><router-outlet _ngcontent-mfl-c18=""></router-outlet><app-home _nghost-mfl-c16=""><section _ngcontent-mfl-c16=""><div _ngcontent-mfl-c16="" class="container"><div _ngcontent-mfl-c16="" class="row p-flex-jc-sb"><div _ngcontent-mfl-c16="" class="p-profile item"></div><div _ngcontent-mfl-c16="" class="item"><span _ngcontent-mfl-c16="" class="p-tag">Devloper</span><h1 _ngcontent-mfl-c16="">Anish Kumar</h1><p _ngcontent-mfl-c16="" style="
+    color: #acacac;
+    width: 80%;
+"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, id maiores odit numquam earum voluptate? Eius incidunt libero iste, amet modi deserunt exercitationem placeat ut, non quis consectetur quo eum. </p><a _ngcontent-mfl-c16="" href="http://localhost:4200/">Read More <img _ngcontent-mfl-c16="" src="./Portfolio_files/rm.png" width="20px" alt=""></a></div></div></div></section></app-home><!--container--></div></section></app-root>
+<script src="./Portfolio_files/runtime.js.download" defer=""></script><script src="./Portfolio_files/polyfills.js.download" defer=""></script><script src="./Portfolio_files/styles.js.download" defer=""></script><script src="./Portfolio_files/vendor.js.download" defer=""></script><script src="./Portfolio_files/main.js.download" defer=""></script>
+
+</body></html>

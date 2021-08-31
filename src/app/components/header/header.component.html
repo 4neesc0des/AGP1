@@ -1,0 +1,32 @@
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-item p-flex p-flex-algn-center p-flex-jc-sb">
+        <ul>
+          <li class="humburger p-cursor" (click)="status = !status">
+            <span></span>
+            <span></span>
+            <span></span>
+          </li>
+          <li>
+            <img src="../../../assets/img/search.png" alt="" class="p-cursor" />
+          </li>
+        </ul>
+        <ul [ngClass]="status ? 'active' : ''">
+          <li>
+            <a routerLink="" routerLinkActive="is-active"> Home </a>
+          </li>
+          <li>
+            <a href=""> About </a>
+          </li>
+          <li>
+            <a href=""> Portfolio </a>
+          </li>
+          <li>
+            <a href=""> Reach </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
